@@ -1,4 +1,4 @@
-describe('Products Module', function() {
+describe('Module: products', function() {
     var $rootScope;
     var $state;
 
@@ -13,13 +13,13 @@ describe('Products Module', function() {
 
     describe('products state', function() {
         it('should respond to url', function() {
-            expect($state.href('products')).toEqual('#!/products');
+            expect($state.href('list')).toEqual('#!/products');
         });
     
         it('should activate the state', function() {
-            $state.go('products');
+            $state.go('list');
             $rootScope.$digest();
-            expect($state.current.name).toBe('products');
+            expect($state.current.name).toBe('list');
         });
     });
 

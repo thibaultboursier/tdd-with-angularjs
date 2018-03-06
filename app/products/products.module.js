@@ -3,7 +3,7 @@ angular.module('app.products', [
 ])
     .config(function($stateProvider) {
 
-        $stateProvider.state('products', {
+        $stateProvider.state('list', {
             url: '/products'
         });
 
