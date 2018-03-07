@@ -1,4 +1,4 @@
 angular.module('app.products')
     .component('productList', {
-        template: '<div class="title">List</div>'
+        templateUrl: 'products/product-list.template.html'
     });

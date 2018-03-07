@@ -4,7 +4,8 @@ angular.module('app.products', [
     .config(function($stateProvider) {
 
         $stateProvider.state('list', {
-            url: '/products'
+            url: '/products',
+            component: 'productList'
         });
 
         $stateProvider.state('detail', {
