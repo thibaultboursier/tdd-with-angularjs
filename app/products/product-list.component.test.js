@@ -4,6 +4,7 @@ describe('Component: productList', function() {
 
     beforeEach(angular.mock.module('app'))
     beforeEach(angular.mock.module('app.products'))
+    beforeEach(angular.mock.module('ngTemplates'));    
  
     beforeEach(inject(function(_$rootScope_, _$compile_) {
         scope = _$rootScope_.$new();

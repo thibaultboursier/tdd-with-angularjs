@@ -20,7 +20,8 @@ module.exports = function(config) {
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'app/products/products.module.js',
       'app/app.module.js',
-      'app/**/*.js'
+      'app/**/*.js',
+      'app/**/*.html'
     ],
 
 
@@ -31,6 +32,12 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'app/**/*.html': ['ng-html2js']
+    },
+
+    ngHtml2JsPreprocessor: {
+      moduleName: 'ngTemplates',      
+      stripPrefix: 'app/'
     },
 
 

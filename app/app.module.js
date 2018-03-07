@@ -7,7 +7,8 @@ angular.module('app', [
 
     $stateProvider
         .state('default', {
-            url: '/'
+            url: '/',
+            templateUrl: 'app.template.html'
         });
     
         $urlRouterProvider.otherwise('/');

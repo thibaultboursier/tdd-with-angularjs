@@ -4,6 +4,7 @@ describe('Module: App', function() {
     var $location;
 
     beforeEach(angular.mock.module('app'));
+    beforeEach(angular.mock.module('ngTemplates'));
 
     beforeEach(inject(function(_$rootScope_, _$state_, _$location_) {
         $rootScope = _$rootScope_;
