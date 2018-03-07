@@ -2,9 +2,9 @@ describe('Module: products', function() {
     var $rootScope;
     var $state;
 
-    beforeEach(angular.mock.module('app'))
-    beforeEach(angular.mock.module('app.products'))
-    beforeEach(angular.mock.module('ui.router'))
+    beforeEach(angular.mock.module('app'));
+    beforeEach(angular.mock.module('app.products'));
+    beforeEach(angular.mock.module('ui.router'));
  
     beforeEach(inject(function(_$rootScope_, _$state_) {
         $rootScope = _$rootScope_;
